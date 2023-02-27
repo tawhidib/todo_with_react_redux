@@ -1,16 +1,13 @@
-import logo from "./logo.svg";
 import "./App.css";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div class="grid place-items-center bg-blue-100 h-screen px-6 font-sans">
       {/* <!-- navbar --> */}
-      <div class="fixed top-0 left-0 text-center w-full header bg-violet-600 py-4 text-white font-bold text-lg shadow-lg">
-        Simple Todo Application with Redux
-      </div>
-
+      <Navbar />
+      {/* <!-- header --> */}
       <div class="w-full max-w-3xl shadow-lg rounded-lg p-6 bg-white">
-        {/* <!-- header --> */}
         <div>
           <form class="flex items-center bg-gray-100 px-4 py-4 rounded-md">
             <img src="./images/notes.png" class="w-6 h-6" alt="Add todo" />
